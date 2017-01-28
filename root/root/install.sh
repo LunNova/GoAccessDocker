@@ -6,6 +6,7 @@ apk add --no-cache --virtual .build-deps \
 	make \
 	geoip-dev \
     freetype-dev \
+	ncurses-dev \
     musl-dev
 
 wget http://tar.goaccess.io/goaccess-1.1.1.tar.gz
