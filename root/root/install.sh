@@ -18,4 +18,12 @@ make install
 
 apk del .build-deps
 
-/etc/periodic/weekly/libmaxminddb
+ln -s /var/lib/libmaxminddb /usr/share/GeoIP/
+
+# Database files to download
+# MAXMINDDB_FILES="GeoIP.dat"
+# Database download directory
+# MAXMINDDB_URL="http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry"
+# Local target directory
+# MAXMINDDB_LIBDIR="/var/lib/libmaxminddb"
+echo -e "MAXMINDDB_FILES=\"GeoIP.dat\"\nMAXMINDDB_URL=\"http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry\"" > /etc/conf.d/libmaxminddb
