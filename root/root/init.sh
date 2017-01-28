@@ -9,7 +9,7 @@ if [ -f "/config/goaccess.conf" ]; then
 	ln -s /config/goaccess.conf /usr/local/etc/goaccess.conf
 fi
 
-if [ -f "/usr/local/etc/goaccess.conf" ] && [! -L "/usr/local/etc/goaccess.conf" ]; then
+if [ -f "/usr/local/etc/goaccess.conf" ] && [ ! -L "/usr/local/etc/goaccess.conf" ]; then
 	mv /usr/local/etc/goaccess.conf /config/goaccess.conf
 	ln -s /config/goaccess.conf /usr/local/etc/goaccess.conf
 fi
