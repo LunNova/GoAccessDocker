@@ -4,7 +4,7 @@ MAINTAINER Ross Allan <docker@nallar.me>
 ENV LANG=C.UTF-8 \
 FIX_PERMISSIONS=true \
 LOGPATH=/log \
-LOGFILE=access.log \
+LOGFILE=access.log* \
 REPORTPATH=/report \
 REPORTFILE=index.html \
 WSHOST=auto
