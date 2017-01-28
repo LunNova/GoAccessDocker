@@ -9,6 +9,8 @@ apk add --no-cache --virtual .build-deps \
 	ncurses-dev \
     musl-dev
 
+ln -s /config/goaccess.conf /usr/local/etc/goaccess.conf
+	
 wget http://tar.goaccess.io/goaccess-1.1.1.tar.gz
 tar -xzvf goaccess-1.1.1.tar.gz
 cd goaccess-1.1.1/

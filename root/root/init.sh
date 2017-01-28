@@ -1,7 +1,6 @@
 #!/bin/bash
-cd /out/
 
-if [ "x$WSHOST" eq "xauto" ]; then
+if [ "x$WSHOST" -eq "xauto" ]; then
 	export WSHOST=`hostname -f`
 fi
 
