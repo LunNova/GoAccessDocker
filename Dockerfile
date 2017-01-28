@@ -12,8 +12,7 @@ WSHOST=auto
 COPY root/ /
 RUN chmod +x /root/*.sh && /bin/sh /root/install.sh
 
-VOLUME /report
-VOLUME /log
+VOLUME /report /log
 
 ENTRYPOINT ["/sbin/tini", "--", "/root/init.sh"]
 CMD ["/root/init.sh"]

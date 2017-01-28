@@ -1,9 +1,10 @@
 #!/bin/sh
-apk --no-cache add ca-certificates openssl tini curl bash sudo geoip && update-ca-certificates
+apk --no-cache add ca-certificates openssl tini curl bash sudo geoip ncurses && update-ca-certificates
 
 apk add --no-cache --virtual .build-deps \
     gcc \
 	make \
+	geoip-dev \
     freetype-dev \
     musl-dev
 
