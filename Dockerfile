@@ -7,6 +7,8 @@ LOGPATH=/log \
 LOGFILE=access.log \
 REPORTPATH=/report \
 REPORTFILE=index.html \
+REALTIMEREPORTFILE=realtime.html \
+REALTIMEENABLED=false \
 CONFIGPATH=/config \
 WSHOST=auto
 

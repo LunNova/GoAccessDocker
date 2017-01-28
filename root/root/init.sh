@@ -20,4 +20,8 @@ if [ "x$FIXPERMISSIONS"="xtrue" ]; then
 fi
 
 /etc/periodic/weekly/libmaxminddb
-goaccess -f "$LOGPATH/$LOGFILE" -o "$REPORTPATH/$REPORTFILE" --real-time-html --ws-url="wss://$WSHOST"
+goaccess -f "$LOGPATH/$LOGFILE" -o "$REPORTPATH/$REPORTFILE"
+
+if [ "x$REALTIMEENABLED"="xtrue" ]; then
+	goaccess -f "$LOGPATH/$LOGFILE" -o "$REPORTPATH/$REALTIMEREPORTFILE" --real-time-html --ws-url="wss://$WSHOST"
+fi
