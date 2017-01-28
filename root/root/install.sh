@@ -12,7 +12,7 @@ apk add --no-cache --virtual .build-deps \
 wget http://tar.goaccess.io/goaccess-1.1.1.tar.gz
 tar -xzvf goaccess-1.1.1.tar.gz
 cd goaccess-1.1.1/
-./configure --enable-geoip --enable-utf8
+./configure --enable-geoip --enable-utf8 --with-openssl
 make
 make install
 
