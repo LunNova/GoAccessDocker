@@ -6,6 +6,7 @@ apk add --no-cache --virtual .build-deps \
 	make \
 	geoip-dev \
     freetype-dev \
+	openssl-dev \
 	ncurses-dev \
     musl-dev
 	
