@@ -19,7 +19,8 @@ make install
 
 apk del .build-deps
 
-ln -s /var/lib/libmaxminddb /usr/share/GeoIP/
+rm -r /usr/share/GeoIP/
+ln -s /var/lib/libmaxminddb/ /usr/share/GeoIP
 
 # Database files to download
 # MAXMINDDB_FILES="GeoIP.dat"

@@ -20,6 +20,7 @@ if [ "x$FIXPERMISSIONS"="xtrue" ]; then
 fi
 
 /etc/periodic/weekly/libmaxminddb
+
 goaccess -f "$LOGPATH/$LOGFILE" -o "$REPORTPATH/$REPORTFILE"
 
 if [ "x$REALTIMEENABLED"="xtrue" ]; then
