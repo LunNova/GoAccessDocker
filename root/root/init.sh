@@ -14,5 +14,10 @@ if [ -f "/usr/local/etc/goaccess.conf" ] && [ ! -L "/usr/local/etc/goaccess.conf
 	ln -s /config/goaccess.conf /usr/local/etc/goaccess.conf
 fi
 
+if [ "x$FIXPERMISSIONS"="xtrue" ]; then
+	chmod -R 0666 /config
+	chmod -R 0666 /report
+fi
+
 /etc/periodic/weekly/libmaxminddb
 goaccess -f "$LOGPATH/$LOGFILE" -o "$REPORTPATH/$REPORTFILE" --real-time-html --ws-url="$WSHOST"
