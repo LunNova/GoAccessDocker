@@ -18,4 +18,3 @@ RUN chmod +x /root/*.sh && /bin/sh /root/install.sh
 VOLUME /report /log /config
 
 ENTRYPOINT ["/sbin/tini", "--", "/root/init.sh"]
-CMD ["/root/init.sh"]
